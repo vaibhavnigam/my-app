@@ -1,5 +1,4 @@
 import { TestBed, async } from '@angular/core/testing';
-
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -36,4 +35,12 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h2').textContent).toContain('Vaibhav!!');
   }));
+
+  it('should render lable in tag', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('div').textContent).toContain('Id: 1');
+  }));
+
 });
