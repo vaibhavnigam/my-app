@@ -14,6 +14,6 @@ export class AppComponent {
   title = 'Hello Angular 4!';
   hero :Hero = {
     id:1,
-    name:'Vaibhav'
+    name:'Angular Take 1'
   };
 }
